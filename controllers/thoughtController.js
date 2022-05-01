@@ -46,6 +46,21 @@ module.exports = {
       .then((Thought) => res.json(Thought))
       .catch((err) => res.status(500).json(err));
   },
+// createThought(req, res) {
+//     Thought.findOneAndUpdate(
+//     {_id: req.params.id},
+//     {$push: {thoughts: params.thoughtId}},
+//     {new:true})
+//     .populate({path: 'thoughts'})
+//       .select('-__v')
+//       .then((User) =>
+//         !User
+//           ? res.status(404).json({ message: 'No User with that ID' })
+//           : res.json(User)
+//       )
+//       .catch((err) => res.status(500).json(err));
+//   },
+
   // update a Thought
   updateThought(req, res) {
     Thought.findOneAndUpdate(
