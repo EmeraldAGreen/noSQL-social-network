@@ -2,6 +2,9 @@ const express = require('express');
 const db = require('./config/connection');
 const routes = require('./routes');
 
+// We import the ObjectId() function from MongoDB
+const ObjectId = require('mongodb').ObjectId;
+
 // const cwd = process.cwd();
 
 const PORT = process.env.PORT || 3001;

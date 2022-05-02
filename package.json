@@ -1,0 +1,25 @@
+{
+  "name": "nosql-social-network",
+  "version": "1.0.0",
+  "description": "DU Full Stack Coding Bootcamp Assignment 18",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmeraldAGreen/noSQL-social-network.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmeraldAGreen/noSQL-social-network/issues"
+  },
+  "homepage": "https://github.com/EmeraldAGreen/noSQL-social-network#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.1"
+  }
+}
