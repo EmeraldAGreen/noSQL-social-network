@@ -20,12 +20,18 @@ const reactionSchema = new Schema(
             type: Date,
             default: Date.now,
         },
-    });
-reactionSchema.get(function (date) {
-  return date.toDateString();
-}),
+    },
+    {  toJSON: {
+              getters: true,
+            },
+            id: false,
+          }
+);
+// reactionSchema.get(function (date) {
+//   return date.toDateString();
+// }),
 
-reactionSchema.set('toJSON', { getters: true });
+// reactionSchema.set('toJSON', { getters: true });
 
 // Schema for what makes up a thought; shape of parent document
 const thoughtSchema = new Schema(
