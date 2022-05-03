@@ -1,11 +1,12 @@
-const { Schema, model } = require('mongoose');
+const { ObjectId } = require('bson');
+const { Schema, model, Types } = require('mongoose');
 
 // reaction subdocument schema
 const reactionSchema = new Schema(
     {
         reactionId: { 
             type: Schema.Types.ObjectId, 
-            default: true,
+            default: new Types.ObjectId(),
          },
         reactionBody: {
             type: String, 
@@ -54,11 +55,13 @@ const thoughtSchema = new Schema(
         required: true,
     },
     reactions: [reactionSchema],
-    toJSON: {
+},
+    { toJSON: {
         getters: true,
         virtuals: true,
       },
-});
+    }
+);
 
 thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
