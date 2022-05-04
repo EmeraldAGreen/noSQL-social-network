@@ -13,8 +13,10 @@ const {
 // /api/users
 router.route('/')
 .get(getAllUsers)
+.post(createUser);
+
+router.route('/:userId')
 .get(getSingleUser)
-.post(createUser)
 .put(updateUser)
 .delete(removeUser);
 // *bonus remove user's assoc thoughts on delete
