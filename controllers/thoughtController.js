@@ -14,7 +14,6 @@ module.exports = {
       .then(async (Thoughts) => {
         const ThoughtObj = {
           Thoughts,
-        //   headCount: await headCount(),
         };
         return res.json(ThoughtObj);
       })
@@ -83,7 +82,7 @@ module.exports = {
           ? res.status(404).json({ message: 'No such Thought exists' })
           : User.findOneAndUpdate(
               { Thoughts: req.params.thoughtId },
-              { $pull: { Thoughts: req.params.thoughtId } },
+              { $pull: { thoughtText: req.params.thoughtId } },
               { new: true }
             )
       )
