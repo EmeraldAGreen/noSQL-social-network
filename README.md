@@ -28,8 +28,8 @@ Read more about [MIT](https://opensource.org/licenses/MIT).
 Please contact me via the email below to report bugs or suggest enhancements.
 
 ## Walkthrough
-[User Routes](https://drive.google.com/file/d/1lUjLhejf9_KkhJkeAiSFap2AV5f1YdCM/view)
-[Thoughts Routes](https://drive.google.com/file/d/1XohuqQTMUxmHOSTu4KuG2YeRWdQA6GdI/view)
+* [User Routes](https://drive.google.com/file/d/1lUjLhejf9_KkhJkeAiSFap2AV5f1YdCM/view)
+* [Thoughts Routes](https://drive.google.com/file/d/1XohuqQTMUxmHOSTu4KuG2YeRWdQA6GdI/view)
   
 ## Questions
 Find me on Github: [EmeraldAGreen](https://github.com/EmeraldAGreen)
